@@ -1,13 +1,105 @@
-body {
+* ::before ::after {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-title {
+  font-size: 30px;;
+  margin: 0 0 20px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0 5px 15px rgba(30,30,30,0.3);
+  background-color: cornsilk;
+  color: darkblue;
+}
+
+.card {
+  max-width: 250px;
+  min-width: 150px;
+  padding: 0 0 10px;
+  box-shadow: 0 5px 15px rgba(30,30,30,0.3);
+  border-radius : 5px;
+  margin: 16px;
+  cursor: pointer;
+  min-height: 100px;
+  text-align: left ;
+  display: flex;
+  flex-direction : column;
+  justify-content: space-between;
+  position: relative;
+  cursor: default   ;
+}
+
+
+
+.container-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 20px auto 0;
+}
+
+.card h2 {
+  font-size: 16px;
+  margin: 0px;
+  padding : 5px 5px;
+  color: darkblue;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width:250px ;
+}
+
+.card h2 span {
+  margin: 0 10px;
+}
+
+h1,p {
+  text-align: center;
+}
+
+.taskContainer {   
+  display : flex; 
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.task {
+  color: blueviolet;
+  font-size: 14px;
+  margin: 0 10px ;
+  padding: 0;
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+  font-weight: 200;
+}
+
+.addTask {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 5px 0px;
+}
+
+.addTask input {
+  width: 100%;
+  border-radius: 5px;
+  border : 1px solid;
+  font-size: 0.6em;
+  margin: 0px 3px 0px;
+}
+
+.addTask PlusOutlined {
+  cursor: pointer;
 }
