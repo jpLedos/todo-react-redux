@@ -1,6 +1,6 @@
 import './App.css';
 import 'antd/dist/antd.css';
-import Todoslist from './Components_jp/TodosList'
+import Todoslist from './Components/TodosList'
 
 
 function App() {
